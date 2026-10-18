@@ -156,19 +156,19 @@ EBM 的 FAST 算法从候选对中自动筛选出的关键交互项，展现出�
 在完全锁定的测试集（203 样本）中，Model A 与 Model B 在 **50 个样本上出现预测翻转（占比 24.6%）**。以下展示最具代表性的诊断案例与生成图像：
 
 ### 5.1 案例 1：【B 挽救漏诊】微弱动态缺血（真实缺血 $y=1$）
-- **图像路径**：[case1_subtle_ischemia_caught_by_B.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/case1_subtle_ischemia_caught_by_B.png)
+![案例 1: 微弱动态缺血被 Model B 成功捕获](models/waterfall/case1_subtle_ischemia_caught_by_B.png)
 - **患者与窗口**：患者 `P04`（`e0127`），发作时刻 `01:09:34`（`pos_ST0+`），基线时刻 `00:43:10`（正常清洁，间隔 26 分钟）。
 - **预测概率对比**：$P_A = 0.0674$（漏诊！）$\rightarrow$ $P_B = 0.7496$（**高置信报警！**）。
 - **局部归因**：绝对抬高幅度仅 0.08 mV 未跨过单图硬门槛；但对比基线后，`cur_ch0_t_amp & prev_ch0_t_amp` 贡献了 **+0.776 log-odds**，二阶时序项瞬间扭转局势。
 
 ### 5.2 案例 2：【B 平反误报】心动过速引起的生理性假性下移（正常心电 $y=0$）
-- **图像路径**：[case3_chronic_st_elevation_corrected_by_B.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/case3_chronic_st_elevation_corrected_by_B.png)
+![案例 2: 心动过速生理性 J 点下移假警报被 Model B 成功平反](models/waterfall/case3_chronic_st_elevation_corrected_by_B.png)
 - **患者与窗口**：患者 `P35`（`e0206`），当前时刻 `00:26:40`（心动过速 `neg_tachy`，HR=118 bpm）。
 - **预测概率对比**：$P_A = 0.8463$（**85% 极度严重假阳误报！**）$\rightarrow$ $P_B = 0.2022$（**成功平反抑制！**）。
 - **局部归因**：心动过速使 J 点表观下移，单图模型被 `cur_rr_std & cur_j_dev (+0.965)` 蒙蔽；Model B 调取基线，`prev_qt (-0.701)` 和 `prev_j_dev (-0.650)` 提供了高达 -1.35 的负反馈抑制，将误警报死死压回门槛之下。
 
 ### 5.3 案例 3：【置信度跃升】分类一致但概率悬殊（真实缺血确诊）
-- **图像路径**：[concordant_case1_confidence_surge_P08.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/concordant_case1_confidence_surge_P08.png)
+![案例 3: 真实缺血确诊案例中置信度跃升 61 个百分点](models/waterfall/concordant_case1_confidence_surge_P08.png)
 - **患者与窗口**：患者 `P08`（`e0151`），发作时刻 `01:21:25`（`pos_T0+`，真缺血 $y=1$）。
 - **预测概率对比**：$P_A = 0.1992$（徘徊在阈值 0.180 边缘，医生易忽略）$\rightarrow$ $P_B = 0.8139$（**置信度暴增 61 个百分点！**）。
 - **局部归因**：`cur_ch1_t_amp & prev_ch1_t_amp` 暴涨 **+0.912**，彻底消除了单图模型在空间电轴上的迟疑。
@@ -180,12 +180,12 @@ EBM 的 FAST 算法从候选对中自动筛选出的关键交互项，展现出�
 学术研究必须客观看待局限性。在全库 51 例真实缺血中，**有 5 例（9.8%）原本被 Model A 抓准，但加入基线后被 Model B 误导而漏诊**。我们总结出三大致命失效机制：
 
 ### 6.1 机制一：【基线污染（Baseline Poisoning）】有伪差的基线使模型对真病变“失明”
-- **图像路径**：[failure_case1_baseline_poisoning_P35.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/failure_case1_baseline_poisoning_P35.png)
+![失效模式 1: 基线本身存在传导阻滞导致真实病变被漏诊](models/waterfall/failure_case1_baseline_poisoning_P35.png)
 - **典型样本**：患者 `P35`（`e0206`），连续 3 次缺血（`PR_test_0036, 0037, 0038`）在单图下均被检出（$P_A = 0.27 \sim 0.67$），但 Model B 全部漏诊（$P_B = 0.04 \sim 0.07$）！
 - **病理原因**：系统为该患者匹配的历史基线位于 `00:00:50`，该处存在**频发早搏与室性传导阻滞（`arrhythmia` 基线）**。基线自身的畸变让模型得出了“既然你本来就长得畸形，现在的畸变只是你的常态”的荒谬结论，基线特征 `prev_qt` 强力打压 -0.65，导致急性心梗被盲目放行！
 
 ### 6.2 机制二：【伪动态漂移（Pseudo-Dynamic Shift）】平坦静息心电被误读为急性发作
-- **图像路径**：[failure_case2_pseudo_dynamic_shift_P21.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/failure_case2_pseudo_dynamic_shift_P21.png)
+![失效模式 2: 基线处于恢复期而在平稳心电图上制造虚假心梗警报](models/waterfall/failure_case2_pseudo_dynamic_shift_P21.png)
 - **典型样本**：患者 `P21`（`e0106`），窗口 `PR_test_0056`（`neg_clean`，完全平稳正常）。
 - **预测翻车**：$P_A = 0.0723$（正常）$\rightarrow$ $P_B = 0.7286$（**73% 虚假报警！**）。
 - **病理原因**：匹配的基线相隔 30 分钟，当时患者处于上一次发作的微弱恢复期。当前波形虽极其标准，但时序项 `cur_st_integ & prev_st_integ` 机械地算出了相对漂移并暴涨 **+0.914**，在平坦波形上“无中生有”制造了心梗警报。
@@ -213,8 +213,8 @@ EBM 的 FAST 算法从候选对中自动筛选出的关键交互项，展现出�
 | | | | 有 Baseline (Paired) | 0.7568 | +0.0254 | 70.19% | 62.75% | 77.63% |
 | **对照标杆：独立有效 Concat (Model B)** | 100% 真实配对 (无需插补) | 13 / 15 | 仅有 Baseline (Dedicated Paired) | 0.8256 | - | 74.11% | 66.67% | 81.58% |
 
-- **概率散点一致性对比图**：[`outputs/models/unified_explicit_ebm_prob_scatter.png`](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/unified_explicit_ebm_prob_scatter.png)
-- **典型案例配对瀑布图**：[`outputs/models/waterfall/explicit_waterfall_case1_ischemia_boost_P21.png`](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/explicit_waterfall_case1_ischemia_boost_P21.png)
+![统一双模态 EBM 预测概率散点一致性对比](models/unified_explicit_ebm_prob_scatter.png)
+![显式配对 EBM 同一心电图在有无基线下的双瀑布图对比](models/waterfall/explicit_waterfall_case1_ischemia_boost_P21.png)
 
 ### 7.2 机制深究：自动算法为何被数据缺失彻底带偏？
 
@@ -244,6 +244,10 @@ EBM 的 FAST 算法从候选对中自动筛选出的关键交互项，展现出�
 | **跨时比例** | **86.7% (13 / 15)** | **0.0% (0 / 15)** | **0.0% (0 / 50)** |
 
 从上表可以铁证：只要存在 50% 缺失，自动贪心搜索在组合数学层面被 630 组“全勤”的内部候选对垄断。因此，**“增加自动搜索预算可以自发找到时序特征”的设想被实验完全推翻**。
+
+- **人工缺失率消融实证检验曲线图**：
+![人工缺失率消融检验四联曲线图](models/synthetic_missingness_ablation_curves.png)
+
 
 ### 7.3 实验初步结论与理论假说 (Empirical Findings & Theoretical Hypotheses)
 

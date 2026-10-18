@@ -148,19 +148,19 @@ Across the 203 test samples, Model A and Model B produced divergent classificati
 - **Sample**: Patient `P04` (`e0127`), onset at 01:09:34, baseline at 00:43:10 (26-minute interval), true label $y = 1$.
 - **Model Predictions**: $P_A = 0.0674$ (below threshold 0.180) $\rightarrow$ $P_B = 0.7496$ (positive prediction).
 - **Attribution**: The absolute ST elevation was 0.08 mV. Cross-temporal term `cur_ch0_t_amp & prev_ch0_t_amp` contributed +0.776 log-odds based on relative variation.
-- **Figure**: [case1_subtle_ischemia_caught_by_B.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/case1_subtle_ischemia_caught_by_B.png)
+![Case 1: Detection of subtle ischemia by Model B via cross-temporal attribution](models/waterfall/case1_subtle_ischemia_caught_by_B.png)
 
 ### 5.2 Case 2: Correction of Tachycardia-Associated False Alarm
 - **Sample**: Patient `P35` (`e0206`), window at 00:26:40 (HR = 118 bpm), true label $y = 0$ (normal).
 - **Model Predictions**: $P_A = 0.8463$ (false positive) $\rightarrow$ $P_B = 0.2022$ (adjusted below threshold).
 - **Attribution**: Tachycardia-associated J-point shift produced positive log-odds in Model A via `cur_rr_std & cur_j_dev` (+0.965). In Model B, baseline terms `prev_qt` (-0.701) and `prev_j_dev` (-0.650) supplied negative offsets (-1.35 total), adjusting the predicted probability.
-- **Figure**: [case3_chronic_st_elevation_corrected_by_B.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/case3_chronic_st_elevation_corrected_by_B.png)
+![Case 2: Correction of tachycardia-induced pseudo-ST depression by Model B](models/waterfall/case3_chronic_st_elevation_corrected_by_B.png)
 
 ### 5.3 Case 3: Probability Shift in Concordant Positive Case
 - **Sample**: Patient `P08` (`e0151`), onset at 01:21:25, true label $y = 1$.
 - **Model Predictions**: $P_A = 0.1992$ (near threshold) $\rightarrow$ $P_B = 0.8139$.
 - **Attribution**: Cross-temporal term `cur_ch1_t_amp & prev_ch1_t_amp` added +0.912 log-odds relative to baseline.
-- **Figure**: [concordant_case1_confidence_surge_P08.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/concordant_case1_confidence_surge_P08.png)
+![Case 3: Confidence surge from 0.1992 to 0.8139 in confirmed ischemia](models/waterfall/concordant_case1_confidence_surge_P08.png)
 
 ---
 
@@ -172,13 +172,13 @@ Among the 51 true positive events in the test set, 5 events (9.8%) detected by M
 - **Sample**: Patient `P35` (`e0206`), episodes `PR_test_0036` to `0038`.
 - **Predictions**: Model A detected the events ($P_A = 0.27 - 0.67$), whereas Model B predicted below threshold ($P_B = 0.04 - 0.07$).
 - **Observation**: The assigned baseline window at 00:00:50 contained ventricular conduction abnormalities. The model attributed current morphological deviations to pre-existing abnormality, yielding negative log-odds contributions (e.g., `prev_qt` -0.65).
-- **Figure**: [failure_case1_baseline_poisoning_P35.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/failure_case1_baseline_poisoning_P35.png)
+![Failure Mode 1: Baseline conduction abnormality causes false negative](models/waterfall/failure_case1_baseline_poisoning_P35.png)
 
 ### 6.2 Post-Ischemic Transition Baseline
 - **Sample**: Patient `P21` (`e0106`), window `PR_test_0056` (true normal, $y = 0$).
 - **Predictions**: $P_A = 0.0723$ (true negative) $\rightarrow$ $P_B = 0.7286$ (false positive).
 - **Observation**: The baseline window occurred during recovery from an earlier ischemic episode. The term `cur_st_integ & prev_st_integ` registered an artificial relative offset (+0.914 log-odds) against normal resting morphology.
-- **Figure**: [failure_case2_pseudo_dynamic_shift_P21.png](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/failure_case2_pseudo_dynamic_shift_P21.png)
+![Failure Mode 2: Baseline from post-ischemic recovery period generates false alarm](models/waterfall/failure_case2_pseudo_dynamic_shift_P21.png)
 
 ### 6.3 Posture-Induced Axis Rotation
 False positive rates on posture changes (`neg_posture`) remained elevated across all tested models lacking spatial geometric constraints (Logistic Regression: 95.6%, EBM: 82.6%, XGBoost: 95.6%).
@@ -203,8 +203,8 @@ To test whether a single EBM model can handle both single-input (unpaired) and p
 | | | | With Baseline (Paired) | 0.7568 | +0.0254 | 70.19% | 62.75% | 77.63% |
 | **Reference: Dedicated Model B** | 100% Paired (No Imputation) | 13 / 15 | Dedicated Paired Only | 0.8256 | - | 74.11% | 66.67% | 81.58% |
 
-- Scatter plot comparison: [`outputs/models/unified_explicit_ebm_prob_scatter.png`](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/unified_explicit_ebm_prob_scatter.png)
-- Waterfall plot: [`outputs/models/waterfall/explicit_waterfall_case1_ischemia_boost_P21.png`](file:///Users/bingerliang/antigravity_projects/edb_ischemia_project/outputs/models/waterfall/explicit_waterfall_case1_ischemia_boost_P21.png)
+![Prediction consistency scatter plot for unified dual-mode EBM](models/unified_explicit_ebm_prob_scatter.png)
+![Paired waterfall comparison under missing vs present baseline](models/waterfall/explicit_waterfall_case1_ischemia_boost_P21.png)
 
 ### 7.2 Mechanism: Interaction Selection Under Partial Missingness
 
@@ -234,6 +234,10 @@ Comparing dedicated Model B (100% paired) with the unified model (50% imputed) r
 | Cross-Temporal Ratio | 86.7% (13 / 15) | 0.0% (0 / 15) | 0.0% (0 / 50) |
 
 Under 50% missing baseline data, greedy interaction search prioritized fully observed within-current pairs over cross-temporal pairs, resulting in negligible baseline gains (+0.0031 AUROC). Explicit domain-informed pair injection (Step 17 and Step 18-B) recovered performance (+0.0326 AUROC gain, 62.75% sensitivity).
+
+- **Synthetic Missingness Ablation Curves**:
+![Synthetic Missingness Ablation Curves](models/synthetic_missingness_ablation_curves.png)
+
 
 ### 7.3 Architectural Scalability Considerations
 
