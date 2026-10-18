@@ -1,4 +1,4 @@
-# ECG Mixmodel XAI: Longitudinal Interpretable ECG Analysis for Myocardial Ischemia Detection
+# ECG XAI: Longitudinal Interpretable ECG Analysis for Myocardial Ischemia Detection
 
 This repository contains the experimental pipeline, empirical benchmark results, interpretability visualizations, and next-generation model proposals for **explainable, longitudinal electrocardiogram (ECG) analysis**.
 
