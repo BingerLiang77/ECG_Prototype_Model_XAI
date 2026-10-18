@@ -18,6 +18,10 @@ Proposed 4-step framework integrating Cross-Attention temporal relevance ($\alph
 - 🇺🇸 **English Proposal**: [`outputs/longitudinal_interpretable_ecg_model_proposal_en.md`](outputs/longitudinal_interpretable_ecg_model_proposal_en.md)
 - 🇨🇳 **Chinese Proposal**: [`outputs/longitudinal_interpretable_ecg_model_proposal_zh.md`](outputs/longitudinal_interpretable_ecg_model_proposal_zh.md)
 
+### 3. Benchmark Data Tables Notebook (实验数据纯享草稿)
+Condensed reference notebook retaining all 7 experimental benchmark tables, feature ranking comparisons, and interaction logs without extended discussion:
+- 🇺🇸 **English Notebook**: [`outputs/experiment_tables_draft_en.md`](outputs/experiment_tables_draft_en.md)
+
 ---
 
 ## 🔬 Key Experimental Findings
