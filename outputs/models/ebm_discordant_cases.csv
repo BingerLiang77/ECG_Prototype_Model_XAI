@@ -1,0 +1,51 @@
+pair_id,patient_id,record,event_id,subtype,ground_truth,pred_A,prob_A,threshold_A,pred_B,prob_B,threshold_B,discordance_category,start_sample,cur_time_hhmmss,prev_start_sample,prev_time_hhmmss,prev_type,prev_gap_s,peak_uv,event_role,event_types,with_arrhythmia
+PR_test_0011,P04,e0127,e0127_E03,pos_ST0+,1,0,0.0674,0.18,1,0.7496,0.24,A_neg_B_pos (B catches subtle ischemia missed by A),1043500,01:09:34,647500,00:43:10,clean,1574.0,100.0,primary,ST0++ST1-+T0+,0
+PR_test_0015,P08,e0151,e0151_E02,pos_T0+,1,0,0.0922,0.18,1,0.2636,0.24,A_neg_B_pos (B catches subtle ischemia missed by A),1598250,01:46:33,207500,00:13:50,arrhythmia,5553.0,400.0,primary,T0+,0
+PR_test_0003,P21,e0106,e0106_E02,pos_T1-,1,0,0.0441,0.18,1,0.6677,0.24,A_neg_B_pos (B catches subtle ischemia missed by A),821500,00:54:46,317500,00:21:10,clean,2006.0,200.0,extra,ST1-+T1-,0
+PR_test_0020,P41,e0162,e0162_E03,pos_T1-,1,0,0.0141,0.18,1,0.2537,0.24,A_neg_B_pos (B catches subtle ischemia missed by A),468750,00:31:15,35000,00:02:20,clean,1725.0,350.0,primary,ST1-+T0++T1-,0
+PR_test_0021,P41,e0162,e0162_E03,pos_ST1-,1,0,0.054,0.18,1,0.4258,0.24,A_neg_B_pos (B catches subtle ischemia missed by A),561250,00:37:25,35000,00:02:20,clean,2095.0,150.0,extra,ST1-+T0++T1-,0
+PR_test_0196,P01,e1301,,neg_arrhythmia,0,0,0.0932,0.18,1,0.2844,0.24,A_neg_B_pos (B false alarm),217500,00:14:30,67500,00:04:30,clean,590.0,,,,1
+PR_test_0055,P21,e0106,,neg_clean,0,0,0.0637,0.18,1,0.4415,0.24,A_neg_B_pos (B false alarm),887500,00:59:10,600000,00:40:00,clean,1140.0,,,,0
+PR_test_0056,P21,e0106,,neg_clean,0,0,0.0723,0.18,1,0.7286,0.24,A_neg_B_pos (B false alarm),890000,00:59:20,442500,00:29:30,clean,1780.0,,,,0
+PR_test_0139,P32,e0605,,neg_tachy,0,0,0.1081,0.18,1,0.2706,0.24,A_neg_B_pos (B false alarm),185000,00:12:20,160000,00:10:40,clean,90.0,,,,0
+PR_test_0152,P32,e0605,,neg_arrhythmia,0,0,0.0029,0.18,1,0.4328,0.24,A_neg_B_pos (B false alarm),1402500,01:33:30,277500,00:18:30,buffer,4490.0,,,,1
+PR_test_0076,P41,e0163,,neg_clean,0,0,0.1571,0.18,1,0.2518,0.24,A_neg_B_pos (B false alarm),257500,00:17:10,232500,00:15:30,clean,90.0,,,,0
+PR_test_0197,P01,e1301,,neg_clean,0,1,0.2214,0.18,0,0.1731,0.24,A_pos_B_neg (B corrects A false alarm),400000,00:26:40,190000,00:12:40,arrhythmia,830.0,,,,0
+PR_test_0064,P04,e0127,,neg_clean,0,1,0.2171,0.18,0,0.0822,0.24,A_pos_B_neg (B corrects A false alarm),1212500,01:20:50,940000,01:02:40,clean,1080.0,,,,0
+PR_test_0071,P08,e0151,,neg_clean,0,1,0.3374,0.18,0,0.1675,0.24,A_pos_B_neg (B corrects A false alarm),702500,00:46:50,207500,00:13:50,arrhythmia,1970.0,,,,0
+PR_test_0072,P08,e0151,,neg_clean,0,1,0.1944,0.18,0,0.1408,0.24,A_pos_B_neg (B corrects A false alarm),1005000,01:07:00,785000,00:52:20,clean,870.0,,,,0
+PR_test_0053,P21,e0106,,neg_clean,0,1,0.2023,0.18,0,0.1138,0.24,A_pos_B_neg (B corrects A false alarm),347500,00:23:10,245000,00:16:20,clean,400.0,,,,0
+PR_test_0116,P35,e0206,,neg_tachy,0,1,0.373,0.18,0,0.0273,0.24,A_pos_B_neg (B corrects A false alarm),442500,00:29:30,17500,00:01:10,clean,1690.0,,,,0
+PR_test_0118,P35,e0206,,neg_arrhythmia,0,1,0.195,0.18,0,0.079,0.24,A_pos_B_neg (B corrects A false alarm),632500,00:42:10,560000,00:37:20,arrhythmia,280.0,,,,1
+PR_test_0127,P35,e0206,,neg_tachy,0,1,0.2115,0.18,0,0.0437,0.24,A_pos_B_neg (B corrects A false alarm),1595000,01:46:20,1245000,01:23:00,clean,1390.0,,,,0
+PR_test_0128,P35,e0206,,neg_tachy,0,1,0.2147,0.18,0,0.0032,0.24,A_pos_B_neg (B corrects A false alarm),1612500,01:47:30,1220000,01:21:20,clean,1560.0,,,,0
+PR_test_0130,P35,e0206,,neg_tachy,0,1,0.8463,0.18,0,0.2022,0.24,A_pos_B_neg (B corrects A false alarm),1622500,01:48:10,1575000,01:45:00,arrhythmia,180.0,,,,0
+PR_test_0132,P35,e0206,,neg_tachy,0,1,0.7191,0.18,0,0.0402,0.24,A_pos_B_neg (B corrects A false alarm),1627500,01:48:30,1225000,01:21:40,clean,1600.0,,,,0
+PR_test_0133,P35,e0206,,neg_clean,0,1,0.337,0.18,0,0.026,0.24,A_pos_B_neg (B corrects A false alarm),1677500,01:51:50,1267500,01:24:30,clean,1630.0,,,,0
+PR_test_0136,P35,e0206,,neg_clean,0,1,0.3097,0.18,0,0.0381,0.24,A_pos_B_neg (B corrects A false alarm),1780000,01:58:40,1770000,01:58:00,arrhythmia,30.0,,,,0
+PR_test_0077,P41,e0163,,neg_clean,0,1,0.3022,0.18,0,0.0905,0.24,A_pos_B_neg (B corrects A false alarm),380000,00:25:20,167500,00:11:10,clean,840.0,,,,0
+PR_test_0086,P41,e0163,,neg_clean,0,1,0.3795,0.18,0,0.0536,0.24,A_pos_B_neg (B corrects A false alarm),1522500,01:41:30,1497500,01:39:50,clean,90.0,,,,0
+PR_test_0087,P41,e0163,,neg_arrhythmia,0,1,0.6002,0.18,0,0.0589,0.24,A_pos_B_neg (B corrects A false alarm),1745000,01:56:20,1432500,01:35:30,clean,1240.0,,,,1
+PR_test_0088,P41,e0163,,neg_clean,0,1,0.1872,0.18,0,0.234,0.24,A_pos_B_neg (B corrects A false alarm),1772500,01:58:10,1470000,01:38:00,clean,1200.0,,,,0
+PR_test_0090,P43,e0166,,neg_clean,0,1,0.2181,0.18,0,0.1948,0.24,A_pos_B_neg (B corrects A false alarm),527500,00:35:10,100000,00:06:40,clean,1700.0,,,,0
+PR_test_0091,P43,e0166,,neg_clean,0,1,0.2302,0.18,0,0.0221,0.24,A_pos_B_neg (B corrects A false alarm),1022500,01:08:10,650000,00:43:20,clean,1480.0,,,,0
+PR_test_0158,P48,e0611,,neg_clean,0,1,0.5338,0.18,0,0.1293,0.24,A_pos_B_neg (B corrects A false alarm),5000,00:00:20,0,00:00:00,clean,10.0,,,,0
+PR_test_0159,P48,e0611,,neg_clean,0,1,0.2316,0.18,0,0.0598,0.24,A_pos_B_neg (B corrects A false alarm),42500,00:02:50,2500,00:00:10,clean,150.0,,,,0
+PR_test_0167,P48,e0611,,neg_posture,0,1,0.5472,0.18,0,0.2153,0.24,A_pos_B_neg (B corrects A false alarm),372500,00:24:50,80000,00:05:20,clean,1160.0,,,,0
+PR_test_0169,P48,e0611,,neg_posture,0,1,0.5732,0.18,0,0.209,0.24,A_pos_B_neg (B corrects A false alarm),460000,00:30:40,47500,00:03:10,clean,1640.0,,,,0
+PR_test_0173,P48,e0611,,neg_posture,0,1,0.2437,0.18,0,0.0885,0.24,A_pos_B_neg (B corrects A false alarm),515000,00:34:20,75000,00:05:00,clean,1750.0,,,,0
+PR_test_0176,P48,e0611,,neg_posture,0,1,0.4803,0.18,0,0.1667,0.24,A_pos_B_neg (B corrects A false alarm),570000,00:38:00,142500,00:09:30,clean,1700.0,,,,0
+PR_test_0184,P48,e0611,,neg_posture,0,1,0.2191,0.18,0,0.2357,0.24,A_pos_B_neg (B corrects A false alarm),1475000,01:38:20,1195000,01:19:40,clean,1110.0,,,,0
+PR_test_0185,P48,e0611,,neg_clean,0,1,0.5919,0.18,0,0.2188,0.24,A_pos_B_neg (B corrects A false alarm),1615000,01:47:40,1582500,01:45:30,clean,120.0,,,,0
+PR_test_0188,P55,e0808,,neg_clean,0,1,0.3119,0.18,0,0.016,0.24,A_pos_B_neg (B corrects A false alarm),52500,00:03:30,45000,00:03:00,clean,20.0,,,,0
+PR_test_0190,P55,e0808,,neg_clean,0,1,0.6701,0.18,0,0.0766,0.24,A_pos_B_neg (B corrects A false alarm),617500,00:41:10,407500,00:27:10,clean,830.0,,,,0
+PR_test_0191,P55,e0808,,neg_clean,0,1,0.7605,0.18,0,0.0244,0.24,A_pos_B_neg (B corrects A false alarm),730000,00:48:40,470000,00:31:20,clean,1030.0,,,,0
+PR_test_0192,P55,e0808,,neg_clean,0,1,0.3669,0.18,0,0.1024,0.24,A_pos_B_neg (B corrects A false alarm),1270000,01:24:40,885000,00:59:00,clean,1530.0,,,,0
+PR_test_0193,P55,e0808,,neg_clean,0,1,0.2102,0.18,0,0.0529,0.24,A_pos_B_neg (B corrects A false alarm),1317500,01:27:50,897500,00:59:50,clean,1670.0,,,,0
+PR_test_0097,P65,e0170,,neg_clean,0,1,0.3151,0.18,0,0.1353,0.24,A_pos_B_neg (B corrects A false alarm),227500,00:15:10,10000,00:00:40,clean,860.0,,,,0
+PR_test_0105,P65,e0170,,neg_arrhythmia,0,1,0.2986,0.18,0,0.0314,0.24,A_pos_B_neg (B corrects A false alarm),952500,01:03:30,905000,01:00:20,arrhythmia,180.0,,,,1
+PR_test_0036,P35,e0206,e0206_E00,pos_T0-,1,1,0.2735,0.18,0,0.045,0.24,A_pos_B_neg (B misses ischemia caught by A),109250,00:07:17,12500,00:00:50,arrhythmia,377.0,200.0,extra,ST0-+ST1++T0-,0
+PR_test_0037,P35,e0206,e0206_E00,pos_ST1+,1,1,0.6725,0.18,0,0.0652,0.24,A_pos_B_neg (B misses ischemia caught by A),207500,00:13:50,12500,00:00:50,arrhythmia,770.0,150.0,primary,ST0-+ST1++T0-,0
+PR_test_0038,P35,e0206,e0206_E00,pos_T0-,1,1,0.3513,0.18,0,0.0773,0.24,A_pos_B_neg (B misses ischemia caught by A),365500,00:24:22,12500,00:00:50,arrhythmia,1402.0,200.0,extra,ST0-+ST1++T0-,0
+PR_test_0022,P41,e0163,e0163_E00,pos_ST1-,1,1,0.3979,0.18,0,0.2332,0.24,A_pos_B_neg (B misses ischemia caught by A),605000,00:40:20,157500,00:10:30,clean,1780.0,250.0,primary,ST1-,0
+PR_test_0044,P55,e0808,e0808_E01,pos_T1-,1,1,0.9701,0.18,0,0.208,0.24,A_pos_B_neg (B misses ischemia caught by A),524750,00:34:59,435000,00:29:00,clean,349.0,300.0,primary,T1-,0

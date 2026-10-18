@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Heavy dataset files & temporary caches
+dataset/
+qc/
+window_budget.csv
+
+# Large trained model binary artifacts (>10MB)
+*.joblib

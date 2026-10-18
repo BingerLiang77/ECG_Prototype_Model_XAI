@@ -1,0 +1,88 @@
+term,importance
+cur_rr_std_ms,0.30911248643907535
+cur_ch0_j_dev_mv,0.2698763539896232
+cur_hr_bpm,0.26732440039147654
+cur_ch1_st_dev_mv & cur_ch1_s_depth_mv,0.26343293771050585
+cur_ch1_t_to_r_ratio,0.2410379462240153
+prev_hr_bpm,0.21572883483011476
+prev_ch1_r_amp_mv,0.2119085146706325
+prev_ch0_j_dev_mv,0.19655037433888808
+prev_ch1_s_depth_mv,0.19102779911569306
+prev_ch1_t_to_r_ratio,0.18771665182215172
+cur_ch1_st_integral_mv_ms,0.18306021013300583
+cur_ch1_t_symmetry_idx,0.1754328031770591
+cur_ch1_t_to_r_ratio & prev_ch1_t_to_r_ratio,0.1727422875483788
+cur_ch1_st_integral_mv_ms & prev_ch1_t_to_r_ratio,0.1704041583007317
+cur_ch1_t_amp_mv & prev_ch1_t_amp_mv,0.1695962434661744
+cur_ch1_st_dev_mv,0.16951143852880352
+cur_ch0_j_dev_mv & prev_ch0_j_dev_mv,0.1605041297548903
+cur_ch1_qt_ms,0.15826990729749293
+prev_rr_std_ms,0.15720496473438378
+cur_ch0_st_integral_mv_ms & prev_ch0_st_integral_mv_ms,0.15187022323164912
+cur_ch0_j_dev_mv & prev_ch1_s_depth_mv,0.15154389380378328
+cur_ch1_j_dev_mv & prev_ch1_j_dev_mv,0.14985372005487524
+cur_ch0_rs_ratio,0.14861486829837756
+cur_ch1_st_integral_mv_ms & prev_ch1_st_integral_mv_ms,0.14777442049216089
+cur_ch0_t_amp_mv & prev_ch0_t_amp_mv,0.14744254446394797
+cur_ch1_qtc_fridericia_ms,0.1451088366884526
+cur_ch1_j_dev_mv,0.14152645671788358
+cur_ch1_s_depth_mv,0.14111352248732684
+cur_ch1_rs_ratio,0.14007735262103602
+cur_ch0_t_amp_mv & prev_ch1_rs_ratio,0.13628289330602827
+prev_ch1_j_dev_mv,0.1314102852923128
+cur_ch0_st_dev_mv,0.12980086769887797
+cur_ch0_t_to_r_ratio,0.1286900855950307
+cur_ch1_t_amp_mv,0.12832772854012714
+cur_reciprocal_st_product,0.12738849427583196
+prev_ch1_rs_ratio,0.12702716594961647
+prev_ch1_st_slope_mv_s,0.12504440370018371
+cur_ch0_s_depth_mv,0.1239528210943537
+cur_ch0_st_integral_mv_ms & prev_ch1_rs_ratio,0.1192355901697294
+prev_ch1_qrs_dur_ms,0.11755596372663529
+cur_ch0_t_to_r_ratio & prev_ch0_t_to_r_ratio,0.11445636449245512
+cur_ch0_st_integral_mv_ms,0.11196010154349167
+cur_ch1_st_slope_mv_s,0.10678554695835464
+prev_ch0_qrs_dur_ms,0.1019617474608773
+cur_ch0_t_amp_mv & prev_ch0_st_integral_mv_ms,0.10141892402971148
+cur_ch0_t_amp_mv,0.0989538022195772
+prev_ch1_qtc_fridericia_ms,0.09634127705736041
+cur_ch0_st_slope_mv_s,0.09485421993649394
+prev_ch0_st_dev_mv,0.0940669227551294
+prev_ch1_qt_ms,0.09134873803690657
+cur_spatial_theta_st_deg & prev_spatial_theta_st_deg,0.09086543440872703
+cur_ch0_qrs_dur_ms,0.09083049641350532
+prev_ch0_t_symmetry_idx,0.08789753619269738
+cur_spatial_theta_qrs_deg,0.08757584515720451
+cur_ch1_qtc_bazett_ms,0.0862730893333906
+prev_ch0_s_depth_mv,0.08565066619197169
+cur_ch1_qrs_dur_ms,0.08332980942864769
+cur_ch0_qt_ms,0.08321101482856665
+cur_ch0_t_symmetry_idx,0.0810538566952555
+prev_ch0_st_slope_mv_s,0.0774149334797729
+prev_ch0_rs_ratio,0.07554256282520627
+prev_ch1_t_symmetry_idx,0.0728881732487492
+cur_ch0_qtc_fridericia_ms,0.07229813630564215
+prev_ch0_st_integral_mv_ms,0.07163977234193199
+prev_ch1_st_dev_mv,0.07131866526695745
+prev_ch1_t_amp_mv,0.06445076725424254
+cur_is_tachycardia,0.0639944794970536
+prev_ch0_r_amp_mv,0.06270463112744774
+cur_ch1_r_amp_mv,0.06267899766921632
+cur_ch0_qtc_bazett_ms,0.06149796126207747
+prev_ch1_qtc_bazett_ms,0.060870009693210686
+prev_spatial_theta_st_deg,0.05855184238875813
+cur_spatial_theta_st_deg,0.05734222608874199
+prev_ch0_t_amp_mv,0.057237465276126914
+prev_ch0_t_to_r_ratio,0.049983517835397326
+prev_ch0_qtc_bazett_ms,0.048217540449423196
+prev_ch0_pathological_q,0.047442866730329276
+cur_ch1_pathological_q,0.04589424598579477
+prev_reciprocal_st_product,0.04529338910604133
+cur_ch0_r_amp_mv,0.04425335216600116
+prev_ch1_st_integral_mv_ms,0.03644524103606265
+prev_ch0_qt_ms,0.03582851980126428
+prev_ch0_qtc_fridericia_ms,0.03474737759472037
+prev_spatial_theta_qrs_deg,0.03464020154690343
+prev_ch1_pathological_q,0.023383592787283133
+prev_is_tachycardia,0.01704402927840096
+cur_ch0_pathological_q,0.00485326552767039

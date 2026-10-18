@@ -1,0 +1,46 @@
+term,importance
+prev_time_gap_s,0.32724352465583395
+abs_delta_ch0_t_amp_mv,0.3245141511911648
+delta_ch1_t_to_r_ratio,0.30073467473531346
+cur_ch0_rs_ratio,0.29149112938592986
+delta_ch1_r_amp_mv,0.2881340823384563
+delta_hr_bpm,0.26832389534903855
+delta_ch1_st_integral_mv_ms,0.2609259742786273
+delta_ch1_s_depth_mv,0.23700089877947553
+delta_spatial_theta_st_deg,0.23166626042972663
+delta_ch0_st_integral_mv_ms,0.2145056339177587
+delta_ch0_j_dev_mv,0.1956816056856634
+abs_delta_ch1_r_amp_mv,0.18917947655917292
+delta_ch1_j_dev_mv,0.18150737706776612
+delta_ch0_t_amp_mv,0.17510172810453542
+abs_delta_ch1_t_amp_mv & abs_cur_ch0_st_dev_mv,0.1732014089573669
+abs_cur_ch0_st_dev_mv,0.17227792264291172
+delta_ch1_rs_ratio,0.16885105707033016
+cur_ch1_qt_ms,0.16653778280403525
+delta_ch0_s_depth_mv,0.16130035821708238
+delta_ch1_t_amp_mv & delta_ch1_s_depth_mv,0.15886384372981902
+abs_delta_ch1_t_amp_mv & delta_spatial_theta_st_deg,0.1557727107010131
+prev_time_gap_s & abs_cur_ch0_t_amp_mv,0.1546016533568875
+abs_cur_ch0_t_amp_mv & cur_ch1_rs_ratio,0.1544579626567306
+delta_ch1_t_amp_mv & cur_ch1_qt_ms,0.15210071762422123
+delta_ch0_st_integral_mv_ms & delta_ch0_s_depth_mv,0.15022684768375913
+abs_delta_ch1_t_amp_mv & delta_ch1_rs_ratio,0.14756118930304638
+abs_delta_ch1_t_amp_mv & abs_delta_ch0_st_dev_mv,0.1449713347392193
+delta_ch1_qt_ms,0.14072691532468348
+delta_ch1_st_integral_mv_ms & delta_ch1_s_depth_mv,0.1400289395746063
+delta_ch1_t_amp_mv & abs_cur_ch0_st_dev_mv,0.13592288130176644
+abs_delta_ch1_t_amp_mv,0.135864835490075
+prev_time_gap_s & cur_ch0_t_amp_mv,0.12630127847430372
+abs_delta_ch0_st_dev_mv,0.11872047536018422
+cur_ch0_t_amp_mv & cur_ch1_rs_ratio,0.11272956412607898
+elev_cur_ch0_st_dev_mv & delta_ch0_s_depth_mv,0.10324784569725715
+dep_delta_ch0_st_dev_mv,0.09623650350715622
+dep_delta_ch1_st_dev_mv,0.0873463781045525
+delta_ch0_t_amp_mv & delta_ch0_s_depth_mv,0.08534888901883352
+elev_cur_ch0_st_dev_mv,0.07738973720240074
+abs_delta_ch1_st_dev_mv,0.0759506834563888
+delta_ch1_t_amp_mv,0.07164473650400394
+cur_ch0_t_amp_mv,0.06835041319292263
+cur_ch1_rs_ratio,0.06804514598102508
+delta_ch0_st_dev_mv,0.06752697427404222
+abs_cur_ch0_t_amp_mv,0.06423007686557956

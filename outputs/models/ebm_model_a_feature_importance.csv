@@ -1,0 +1,52 @@
+term,importance
+cur_ch1_t_symmetry_idx,0.3709605492329055
+cur_ch1_t_to_r_ratio,0.3602828935311785
+cur_rr_std_ms,0.35122003998571455
+cur_rr_std_ms & cur_ch0_j_dev_mv,0.2790634814212327
+cur_ch0_j_dev_mv,0.254821346073761
+cur_ch0_s_depth_mv & cur_ch0_rs_ratio,0.23365288893709418
+cur_ch0_rs_ratio,0.22487260463386388
+cur_ch0_st_slope_mv_s & cur_ch0_st_integral_mv_ms,0.20900150201278714
+cur_ch1_st_dev_mv & cur_ch1_s_depth_mv,0.20396975128095904
+cur_ch1_st_slope_mv_s,0.19987194381106363
+cur_ch1_r_amp_mv,0.19914905314698284
+cur_ch1_s_depth_mv & cur_ch1_t_to_r_ratio,0.1973591421473438
+cur_ch1_s_depth_mv,0.19692328822461533
+cur_rr_std_ms & cur_reciprocal_st_product,0.19424692244158134
+cur_rr_std_ms & cur_ch1_r_amp_mv,0.19023552253484036
+cur_hr_bpm,0.18255409045160503
+cur_ch0_t_to_r_ratio,0.17860125108821137
+cur_ch1_j_dev_mv & cur_ch1_s_depth_mv,0.16902791568928147
+cur_hr_bpm & cur_ch1_qtc_bazett_ms,0.16797345710735695
+cur_ch1_st_integral_mv_ms,0.16448077507073636
+cur_ch1_st_integral_mv_ms & cur_ch1_s_depth_mv,0.15781379787369243
+cur_ch1_t_amp_mv,0.15363526996282567
+cur_ch1_qt_ms,0.15264711212252818
+cur_ch0_st_integral_mv_ms,0.15150829481025213
+cur_ch0_s_depth_mv,0.15044164803746582
+cur_ch1_j_dev_mv,0.14667016377944517
+cur_ch1_st_dev_mv & cur_ch1_st_integral_mv_ms,0.1462931183482287
+cur_ch0_qrs_dur_ms,0.1399498127188527
+cur_ch1_qrs_dur_ms,0.1387170686344495
+cur_ch1_st_integral_mv_ms & cur_ch1_qt_ms,0.13812254702306734
+cur_ch0_t_symmetry_idx,0.1340555289103643
+cur_ch1_rs_ratio,0.1337134698872664
+cur_ch1_st_dev_mv,0.12573230647946243
+cur_ch1_t_amp_mv & cur_ch1_r_amp_mv,0.12520457772990007
+cur_ch0_t_amp_mv,0.12292967019486091
+cur_reciprocal_st_product,0.12289959049801542
+cur_spatial_theta_qrs_deg,0.1209977782086017
+cur_ch1_qtc_fridericia_ms,0.11475577002774008
+cur_ch1_r_amp_mv & cur_ch1_t_to_r_ratio,0.10952501189013143
+cur_ch0_st_slope_mv_s,0.10917587164975119
+cur_spatial_theta_st_deg,0.10405848009526142
+cur_ch1_qtc_bazett_ms,0.1019136014810677
+cur_ch0_st_dev_mv,0.10156493343081242
+cur_ch0_qt_ms,0.08725214203672504
+cur_ch1_st_integral_mv_ms & cur_ch1_r_amp_mv,0.08412707649906351
+cur_ch0_r_amp_mv,0.07892058425567093
+cur_ch0_qtc_bazett_ms,0.06419166766975763
+cur_ch0_qtc_fridericia_ms,0.04365829305581948
+cur_ch1_pathological_q,0.03507966998015219
+cur_is_tachycardia,0.03192655509906402
+cur_ch0_pathological_q,0.01614837053562276

@@ -1,0 +1,94 @@
+feature,importance
+cur_ch1_t_symmetry_idx,1.373929156735745
+cur_ch1_t_to_r_ratio,1.214377791013232
+cur_ch1_s_depth_mv,1.0565675051678216
+cur_rr_std_ms,0.9793566312934285
+cur_ch1_j_dev_mv & cur_ch1_t_symmetry_idx,0.7953747627970819
+cur_ch0_j_dev_mv,0.7949978302477746
+cur_ch1_st_integral_mv_ms,0.7797598453182056
+cur_ch0_st_integral_mv_ms,0.7778343873192469
+cur_ch1_st_integral_mv_ms & cur_ch1_s_depth_mv,0.7384383947729515
+cur_ch1_st_dev_mv & cur_ch1_s_depth_mv,0.7375711670941546
+cur_hr_bpm,0.7065610842740081
+cur_ch0_t_to_r_ratio,0.6583960597772047
+cur_rr_std_ms & cur_ch0_j_dev_mv,0.6551980655948145
+cur_ch1_r_amp_mv,0.6550650659321267
+cur_ch1_s_depth_mv & cur_ch1_t_to_r_ratio,0.6272275664224557
+cur_ch1_qt_ms,0.6136141614409538
+cur_ch1_j_dev_mv,0.5835328057564995
+cur_ch1_st_slope_mv_s,0.5773892366106002
+cur_spatial_theta_qrs_deg,0.5702909450490027
+cur_ch0_t_amp_mv,0.561574727480197
+cur_ch0_s_depth_mv & cur_ch0_rs_ratio,0.5570090331516542
+cur_ch0_s_depth_mv,0.5365888924855513
+cur_ch1_t_amp_mv,0.5292826279351189
+cur_reciprocal_st_product,0.5159849221623445
+cur_ch0_st_dev_mv,0.5083612357647471
+cur_ch1_rs_ratio,0.5069206858822505
+cur_ch0_rs_ratio,0.5042190981581904
+cur_ch0_st_slope_mv_s,0.46423214310299427
+cur_ch0_t_symmetry_idx,0.44965526730862987
+cur_ch0_qt_ms,0.43005156545234957
+cur_ch1_qrs_dur_ms,0.415816768988526
+cur_ch1_qtc_fridericia_ms,0.4074600914391334
+cur_ch0_qtc_fridericia_ms,0.3887301692940828
+cur_spatial_theta_st_deg,0.3805415961030506
+cur_ch1_qtc_bazett_ms,0.36107640892776466
+cur_ch0_qrs_dur_ms,0.32395105287310055
+cur_ch1_st_dev_mv,0.3197387587348804
+cur_ch0_r_amp_mv,0.24285198127987517
+cur_ch0_st_integral_mv_ms & prev_ch0_st_integral_mv_ms,0.24174044366755137
+cur_ch1_t_amp_mv & prev_ch1_t_amp_mv,0.20086618502874387
+cur_ch0_qtc_bazett_ms,0.1588092458170041
+prev_rr_std_ms,0.11614995055654719
+prev_ch1_r_amp_mv,0.10023619778319082
+cur_ch0_t_to_r_ratio & prev_ch0_t_to_r_ratio,0.09498838505838489
+cur_ch0_t_amp_mv & prev_ch0_t_amp_mv,0.09346026562760115
+prev_ch1_qrs_dur_ms,0.0874317188509384
+cur_ch0_t_amp_mv & prev_ch1_rs_ratio,0.0848011493943233
+cur_ch0_st_integral_mv_ms & prev_ch1_rs_ratio,0.08432714564500475
+cur_spatial_theta_st_deg & prev_spatial_theta_st_deg,0.08333416553026872
+cur_ch0_t_amp_mv & prev_ch0_st_integral_mv_ms,0.08190522942105852
+cur_ch0_j_dev_mv & prev_ch1_s_depth_mv,0.07818647237511406
+cur_ch1_st_integral_mv_ms & prev_ch1_st_integral_mv_ms,0.07798285589590351
+cur_ch1_t_to_r_ratio & prev_ch1_t_to_r_ratio,0.0753345827985935
+prev_ch0_j_dev_mv,0.06992511489577936
+prev_ch0_st_dev_mv,0.06973620861088446
+prev_ch1_s_depth_mv,0.06661248771262311
+prev_ch1_qtc_fridericia_ms,0.06549334974580447
+prev_ch1_t_to_r_ratio,0.06302852397138968
+prev_spatial_theta_qrs_deg,0.06181591527458924
+cur_ch1_j_dev_mv & prev_ch1_j_dev_mv,0.0611003791788728
+prev_ch0_qrs_dur_ms,0.05913880001594306
+cur_ch0_j_dev_mv & prev_ch0_j_dev_mv,0.05778932145270199
+prev_hr_bpm,0.057354846450861516
+prev_ch1_st_slope_mv_s,0.05728950727487388
+prev_ch0_st_slope_mv_s,0.055600478098670574
+prev_ch1_j_dev_mv,0.053192858974215815
+prev_ch0_rs_ratio,0.05230403354983629
+prev_ch1_qtc_bazett_ms,0.05173931019976619
+cur_ch1_st_integral_mv_ms & prev_ch1_t_to_r_ratio,0.049593445454078545
+prev_ch0_r_amp_mv,0.04867531467372008
+prev_reciprocal_st_product,0.048071273624509955
+prev_ch0_t_symmetry_idx,0.04592119249975772
+prev_ch1_t_amp_mv,0.0431100410673401
+cur_is_tachycardia,0.04165064557801369
+prev_ch1_t_symmetry_idx,0.0410382344919821
+prev_ch1_qt_ms,0.04058105299664612
+prev_ch0_s_depth_mv,0.04023975075384359
+prev_ch0_t_to_r_ratio,0.039170325078146453
+cur_ch1_pathological_q,0.038293640934426054
+prev_ch0_qtc_bazett_ms,0.03807514598098653
+prev_spatial_theta_st_deg,0.035472755503037995
+prev_ch0_t_amp_mv,0.033737837852222376
+prev_ch0_st_integral_mv_ms,0.032875512487345424
+prev_ch1_st_integral_mv_ms,0.028429922314542735
+prev_ch1_st_dev_mv,0.027763053498122844
+prev_ch1_rs_ratio,0.026689316705835693
+prev_ch0_qtc_fridericia_ms,0.025549257227818187
+prev_ch0_qt_ms,0.025290467142885603
+prev_ch0_pathological_q,0.02311070054556167
+baseline_available,0.01435168162661717
+cur_ch0_pathological_q,0.014271019232701085
+prev_is_tachycardia,0.008195979406262049
+prev_ch1_pathological_q,0.006624213139771914
